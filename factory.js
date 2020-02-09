@@ -2,7 +2,7 @@ class BallFactory {
     constructor() {
         this.createBall = function(type) {
             let ball;
-            if (type === 'football' || type === 'soccor') ball = new Football();
+            if (type === 'football' || type === 'soccer') ball = new Football();
             else if (type === 'basketball') ball = new Basketball();
             ball.roll = function() {
                 return `The ${this._type} is rolling`;
